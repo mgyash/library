@@ -1,0 +1,26 @@
+﻿.footerlinks {
+    color: darksalmon;
+    text-decoration: none !important;
+}
+
+    .footerlinks:hover {
+        color: #ffd800;
+    }
+
+#footer1 {
+    background: #762b00;
+}
+
+#footer2 {
+    background:red ;
+}
+/* Modify the background color */
+
+.navbar-custom {
+    background-color: lightgreen;
+}
+    /* Modify brand and text color */
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: green;
