@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site1.master.cs" Inherits="librarymanagementproject.site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%-- Bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- Datatable css --%>
+    <link href="datatable1/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%-- fontawesome css --%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <%-- custom  css --%>
+    <link href="bootstrap/css/customstylesheet.css" rel="stylesheet" />
+
+    <%-- jQuery --%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <%-- popper js --%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%-- bootstrap js --%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        .bd-navbar {
+    padding: 0.75rem 0;
+    background-color: transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15);
+    
+}
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+        <div id="Navbar1" >
+            <nav  class="navbar navbar-expand-lg navbar-light bd-navbar sticky-top bg-body-tertiary" style="background-color:cyan;>
+                 <a class="navbar-brand" href="#'">
+                    <img src="img/1212.jpg" width="70" height="40" style="margin-left:15px; margin-right:15px;" />
+                </a>
+                <div class="container-fluid">
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                         <form class="d-flex" role="search">
+                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                             <button class="btn btn-outline-success" type="submit">Search</button>
+                         </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <br>
+        <!-- Footer -->
+        <footer>
+
+
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color: whitesmoke"><a class="footerlinks" href="#" style="color:aquamarine " target="_blank"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color: whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" style="color:aquamarine " target="_blank">E-library</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+
+</body>
+</html>
